@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro?</title>
+</head>
+
+<body>
+    <p> Qual é o seu país de origem?</p>
+
+    <select name="cSelect" id="cSelect">      
+        <optgroup label="América">
+            <option value="BRA"> Brasil</option>
+            <option value="EUA" selected> Estados Unidos</option>
+
+        </optgroup>
+
+        <optgroup label="Europa">
+            <option value="ING"> Inglaterra</option>
+
+        </optgroup>
+
+    </select>
+
+    <input id="aButton" type="button" value="Analisar">
+    
+    <div id="result"></div>
+
+    <script>
+        aButton.addEventListener("click", analyze);
+
+        function analyze() {
+            let cSelect = document.getElementById("cSelect").value;
+
+            if (cSelect == "BRA") {
+                result.innerHTML = "<p> <strong> Brasileiro </strong> nativo! <p>"
+
+            } else {
+                result.innerHTML = "<p> Você é um <strong>estrangeiro</strong> quando está em um território brasileiro."
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

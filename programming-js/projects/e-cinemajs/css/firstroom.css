@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.mainContent {
+     max-width: 1000px;
+}
+
+.chairRow {
+     border: 1px solid brown;
+}

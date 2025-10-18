@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Treinamento de appendChild</title>
+
+    <style>
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            height: 100vh;
+        }
+
+        #mDiv {
+            background-color: #65ffff4d;
+            border: 1px solid #222;
+
+            width: 50vw;
+            height: 650px;
+        }
+
+        .Testador {
+            background-color: #ac80d8;
+            color: white;
+
+            width: fit-content;
+            height: fit-content;
+
+            padding: 5px 15px;
+        }   
+
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <div id="mDiv">
+            <button onclick="loadE()"> Aqui</button>
+
+        </div>
+
+    </main>
+
+    <script>
+        // variables
+        let aDiv = document.getElementById("mDiv");
+
+        // load everything
+        function loadE() {
+            let testB = document.createElement("div");
+
+            testB.classList.add("Testador");
+
+            testB.textContent = "teste"
+
+            aDiv.appendChild(testB);
+
+        }
+    
+    </script>
+
+</body>
+
+</html>

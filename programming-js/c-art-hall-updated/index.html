@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Art Hall</title>
+
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+    <!--H-->
+    <header id="mainHeader" class="flex flex-full-align">
+        <h1 id="main-title" class="major-title"> Art Hall</h1>
+
+        <button id="newArtHTML" class="headerButton">
+            New
+            <span class="icon"></span>
+
+        </button>
+
+    </header>
+
+    <!-- Modal -->
+    <section class="modals">
+        <div class="newArtModal">
+            <div>
+                <h2> New Art</h2>
+                <span> <!-- close icon... --> </span>
+
+            </div>
+
+            <form>
+                <fieldset>
+                    <label for=""> Name </label>
+                    <input type="text">
+                
+                    <label for=""> Creator</label>
+                    <input type="text" name="" id="">
+
+                    <label for=""> Type</label>
+                    
+
+                    <label for=""> Image source &#40; URL &#41;</label>
+                    <input type="url" name="" id="">
+
+                    <label for=""> Description </label>
+                    <textarea name="" id=""></textarea>
+
+                </fieldset>
+                                
+                <fieldset>
+                    <input type="submit" value="Add">
+                    <input type="reset" value="Erase">
+    
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--B-->
+    <main id="mainDocument">
+        <section id="artsOutput">
+            <!-- arts...-->
+
+        </section>
+
+    </main>
+
+    <!-- JS -->
+    <script src="classes.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

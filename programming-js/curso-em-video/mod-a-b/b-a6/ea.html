@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com um botão</title>
+
+</head>
+
+<style>
+    main {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        
+        bottom: auto;
+        right: auto;
+
+        font-size: 2.5vw;
+
+        transform: translate(-50%, -100%);
+
+        text-align: center;
+
+        width: 100%;
+    }
+
+    button {
+        border-radius: 50px;
+        border: none;
+        padding: 3vw 5vw;
+
+        transition: 0.25s all;
+    }
+
+    button:hover {
+        color: #fff;
+        background-color: #2d55d6;
+    }
+
+    button:active {
+        background-color: #acafca;
+        transition: 0.25ms;
+    }
+
+</style>
+
+<body>
+    <main>
+        <h1 id="titl"> Interação simples</h1>
+        <button id="b1" onclick="firstC()"> 1º</button>
+        <button id="b2" onclick="seconC()"> 2º</button>
+        <button id="b3" onclick="thirdC()"> 3º</button>
+
+    </main>
+
+    <script>
+        let buttonA = false;
+        let buttonB = false;
+        let buttonC = false;
+
+        const b1 = document.getElementById("b1");
+        const b2 = document.getElementById("b2");
+        const b3 = document.getElementById("b3");
+        const titl = document.getElementById("titl");
+                
+        function firstC() {
+            window.alert("Você clicou no primeiro botão!");
+            buttonA = true;
+
+            b1.style.backgroundColor = "#B2FFA9";
+            bOperate();
+        }
+
+        function seconC() {
+            window.alert("O segundo botão foi pressionado!");
+            buttonB = true
+
+            b2.style.backgroundColor = "#B2FFA9";
+            bOperate();
+        }
+
+        function thirdC() {
+            window.alert("O 3º botão foi acionado!");
+            buttonC = true
+
+            b3.style.backgroundColor = "#B2FFA9";
+            bOperate();
+        }
+
+        function bOperate() {
+            if(buttonA == true && buttonB == true && buttonC == true ) {
+                titl.style.color = "#fff";
+                titl.style.fontWeight = "bolder";
+
+                document.body.style.backgroundColor = "#222";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

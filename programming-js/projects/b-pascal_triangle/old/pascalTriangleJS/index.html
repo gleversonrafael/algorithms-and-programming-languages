@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Triângulo de Pascal</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <header>
+        <h1> Triângulo de Pascal-Tartaglia</h1>
+    </header>
+    
+    <main>
+        <form id="generateTriangle">
+            <fieldset>
+                <legend> Variáveis</legend>
+                
+                <!-- a -->
+                <section>
+                    <label for="selectedA"> a </label>
+                    <select class="selectVariable" id="selectedA">
+                        <option value="variable" selected> Coeficiente a </option>
+                        <option value="numeric"> Valor numérico</option>
+
+                    </select>
+
+                    <div class="showNumericValue">
+                        <label for="aValue"> Valor inteiro</label>
+                        <input type="number" id="aValue" placeholder="Insira apenas um número." step="1">
+                    
+                    </div>
+
+                </section>
+
+                <hr>
+
+                <!-- b -->
+                <section>
+                    <label for="selectedB"> b </label>
+                    <select class="selectVariable" id="selectedB">
+                        <option value="variable" selected> Coeficiente b </option>
+                        <option value="numeric"> Valor numérico</option>
+
+                    </select>
+
+                    <div class="showNumericValue">
+                        <label for="bValue"> Valor inteiro</label>
+                        <input type="number" id="bValue" placeholder="Insira apenas um número." step="1">
+
+                    </div>
+
+                </section>
+                
+
+            </fieldset>
+
+            <!-- n -->
+            <fieldset>
+                <label for="maxN"> Valor máximo de n em (a+b) elevado a n.</label>
+                <input type="number" id="maxN" placeholder="Insira apenas um número." step="1">
+                <br>
+
+            </fieldset>
+            
+            <!-- submit -->
+            <fieldset>  
+                <input type="reset" value="Redefinir">
+                <input type="submit" value="Gerar triângulo">
+
+            </fieldset>
+
+        </form>
+
+    </main>
+    
+    <!-- scripts -->
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/reuse.js"></script>
+    
+</body>
+</html>

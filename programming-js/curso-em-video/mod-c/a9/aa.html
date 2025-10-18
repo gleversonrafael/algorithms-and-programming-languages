@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9 - DOM</title>
+
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        color: #f6fd8a;        
+        background-color: #222;
+        
+        margin: 5vw 5vw;
+    }
+
+    div {
+        background-color: #b2b434;
+        display: inline-block;
+        
+        height: 10vw;
+        width: 10vw;
+    }
+
+</style>
+
+<body>
+    <h1> DOM </h1>
+    <h2> Document Object Model </h2>
+    <hr>
+
+    <div></div>
+    <div></div>
+    <div id="d3"></div>
+    
+    <p> Texto abaixo </p>
+
+    <script>
+        var div = document.getElementsByTagName("div")[0];
+        
+        var p = document.getElementsByTagName("p")[0];
+
+        var d3 = document.querySelector("#d3");
+
+        d3.style.backgroundColor = "#fbff00"
+        div.style.backgroundColor = "#fff";
+        
+        document.write(`Aqui está o texto: ${p.innerHTML}`)
+
+
+    </script>
+
+</body>
+
+</html>

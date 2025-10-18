@@ -1,0 +1,111 @@
+/* config */
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Montserrat */
+
+
+/* general */
+:root {
+    --regF: "Montserrat";
+}
+
+* {
+    font-family: var(--regF);
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #222;
+
+    width: 100%;
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-size: cover;
+
+    box-shadow: inset 0px 0px 2vw #00000017;
+}
+
+/* removerrrrrrrrrrrrr */
+/* ------------- */
+input {
+    height: fit-content;
+    width: fit-content;
+}
+
+
+/* main doc */
+#mainCon {
+    display: flex;
+    background-color: #d3ff0d07;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+/* text section */
+#txtSec {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    min-width: fit-content;
+    width: 40vw;
+    max-width: 400px;
+    
+    height: 200px;
+
+    margin: 0 1.5vw 2.5vh 0px;
+}
+
+#greetings, #timeS {
+    color: #fff;
+    font-weight: normal;
+    text-shadow: 0.5px 0.5px 2px #0000007a;
+}
+
+#greetings {
+    font-size: min(2.7em, 5vw);
+}
+
+#timeS {
+    font-size: min(1em, 2.5vw);
+    margin-bottom: 2vh;
+}
+
+.gEmphasis {
+    color: #222;
+}
+
+
+
+
+/* footer */
+#mainF {
+    background-color: #181818;
+    
+    width: 100%;
+    height: 5vh;
+
+    position: absolute;
+    bottom: 0%;
+}
+
+#mIcon {
+    display: block;  
+
+    width: 4vw;
+
+    height: 4vw;
+
+    margin: auto;
+    transform:translateY(-50%);
+
+    background-size: cover;
+}

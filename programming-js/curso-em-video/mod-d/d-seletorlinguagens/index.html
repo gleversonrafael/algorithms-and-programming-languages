@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Seletor de linguagens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/icons/favicon.ico" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <main>
+        <section id="langArea">
+            <div id="langTxt">
+                <p > Linguagem recomendada</p>
+                <p id="langName"> JavaScript</p>
+                <p id="testeP" style="cursor: pointer;" onclick="reloadP()"> Quero outra (futuramente)</p>
+
+            </div>
+
+            <div id="langImg">
+                <!-- image here -->
+            </div>
+            
+        </section>
+        
+        <section id="contSec">
+            <h1> Seletor de linguagens</h1>
+
+            <form id="mainForm" action="">
+                <section id="starSec">
+                    <p> Nível de dificuldade:</p> 
+                    
+                    <input id="easD" class="starInp" type="radio" value="easD" name="starB" checked>
+                    <label for="easD" class="starLab"></label>
+
+                    <input id="medD" class="starInp" type="radio" value="medD"  name="starB">
+                    <label for="medD" class="starLab"></label>
+
+                    <input id="harD" class="starInp" type="radio" name="starB">
+                    <label for="harD" class="starLab" value="harD"></label>
+                
+                </section>
+
+                <section id="purposeSec">
+                    <p> Finalidade</p>
+
+                    <!-- web development -->
+                    <section>
+                        <input id="webDev" class="purposeInp" type="radio" name="purposeB" value="webDev" checked>
+                        <label for="webDev" class="purposeLab" > Desenvolvimento web</label>
+
+                    </section>
+
+                    <!-- desktop softwares -->
+                    <section>
+                        <input id="deskSoft" class="purposeInp" type="radio" name="purposeB" value="deskSoft">
+                        <label for="deskSoft" class="purposeLab"> Softwares de desktop </label>
+
+                    </section>
+                         
+
+                    <!-- mobile apps -->
+                    <section>
+                        <input id="mobSoft" class="purposeInp" type="radio" name="purposeB" value="mobSoft">
+                        <label for="mobSoft" class="purposeLab">Aplicativos mobile</label>
+                        
+                    </section>
+                    
+
+                </section>
+
+                <input id="sendDataB" type="button" value="Enviar">
+
+            </form>
+
+        </section>
+
+        <!-- image section -->
+        <aside id="imgAside"></aside>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

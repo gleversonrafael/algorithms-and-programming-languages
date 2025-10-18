@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5 - Curso JS</title>
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/2604.svg" type="image/x-icon">
+
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+        color: #e6f7fc;
+        background-color: #222;
+        
+        margin: 15px 0px 0px 10px;
+    }
+
+</style>
+
+<body>
+    <h1>Aula 6 - Ex1</h1>
+
+    <script>
+    
+        var a = Math.floor(Math.random() * 50);
+        var b = Math.floor(Math.random() * 25);
+        
+        window.alert("Valores | a = "+ a +" | b = " + b + " |")
+        var act = Number.parseInt(window.prompt("Qual ação deseja fazer? 1 -> soma | 2 -> subtração"));
+
+        alert(typeof act);
+
+        if (act == 1) {
+            alert(a + b);
+        
+        }else if(act == 2) {
+            alert(a - b);
+        }
+
+        var end = "Fim";
+        end.toString();
+
+        confirm(end);
+
+    </script>
+
+</body>
+
+</html> 

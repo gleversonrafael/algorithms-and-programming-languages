@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Numbers analyzer</title>
+    <link rel="stylesheet" href="gstyle.css">
+    <link rel="stylesheet" href="sstyle.css">
+
+</head>
+
+<body>
+    <main>
+        <section id="mHeader">
+            <h1> D-Numbers analyzer</h1>
+
+        </section>
+
+        <section id="txtCont" options="30">
+            <section>
+                <h2> Numbers</h2>
+
+                <label for="numINP"> Numbers (between 1 and 200)</label>
+                <input id="numINP" class="txtCent" type="number" name="numINP" min="1" max="200" value="1" step="0.1">
+                <input id="addB" type="button" value="Add">
+
+                <select id="numList" class="txtCent" name="numList" multiple>
+                    <!-- numbers here -->
+                </select>
+                
+                <br>
+
+                <input id="analyzeB" type="button" value="Analyze">
+                <input id="clearB" type="button" value="Clear">
+                <input id="consoleB" type="button" value="Console">
+
+            </section> 
+
+            <section>
+                <h2 id="resTitle"> Results</h2>
+
+                <div id="resSec">
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> O aluno passou?</title>
+
+</head>
+
+<body>
+    <h1> Medidor de aprovação básico</h1>
+
+    <h2> Dados</h2>
+
+    <p> 
+        <!-- student's minimum grade average for approvation -->
+        <label for="mAverage"> Média mínima para a aprovação</label>
+        <input type="number" name="mAverage" id="mAverage" min="6" max="10" step="0.1">
+
+    </p>
+
+    <hr>
+
+    <p> 
+        <!-- student name -->
+        <label for="sName">Aluno:</label>
+        <input type="text" name="sName" id="sName" autocomplete="off">
+
+    </p>
+    
+
+    <p>
+        <!-- student average grade -->
+        <label for="sAverage">Média do aluno</label>
+        <input type="sAverage" id="sAverage" name="sAverage">
+
+    </p>
+
+    <hr>
+
+    <div>
+        <!-- results -->
+        <h2>Resultado:</h2>
+        <p id="p-resul"> ???</p>
+
+    </div>
+
+    <input type="button" value="Mostrar" name="rButton" id="rButton">
+
+    <script src="stud.js"></script>
+
+</body>
+
+</html>

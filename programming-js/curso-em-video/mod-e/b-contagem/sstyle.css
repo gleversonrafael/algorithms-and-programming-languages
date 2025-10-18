@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* general */
+.inline-block {
+    display: inline-block;
+}
+
+
+/* inputs */
+.fSec {
+    display: block;
+}
+
+.fSec > input {
+    background-color: #EDEFF7;
+    width: 100%;
+
+    text-align: center;
+    
+    border-radius: 5px;
+    border: none;
+}
+
+.fSec > label {
+    display: inline-block;
+    
+    width: 10%;
+    max-width: 60px;
+
+    border-radius: 5px;
+}
+
+input[type=button] {
+    background-color: #EDEFF7;
+
+    border-radius: 50px;
+    border: none;
+
+    padding: 10px;
+}
+
+input[type=button]:active {
+    background-color: var(--yellow);
+}
+
+
+
+
+/* result section */
+#resSec {
+    display: flex;
+    overflow: scroll;
+
+    margin: 4vh 0px;
+}

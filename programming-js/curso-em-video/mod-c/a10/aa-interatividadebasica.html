@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - Avançando em DOM</title>
+
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: #222;
+    }
+
+    #d1 {
+        display: flex;
+
+        color: #fff;
+        background-color: #0059ff;
+
+        width: 60vw;
+        height: 60vw;
+
+        font-size: 5vw;
+        
+        align-items: center;
+        justify-content: center;
+
+        margin: 2.5vw;
+
+        transition: 1s all;
+    }
+
+    #d1:hover {
+        background-color:#3e6bbe;
+    }
+
+</style>
+
+<body>
+    <div id="d1"0>
+        <p> Clique aqui!</p>
+    </div>
+    
+
+    <script>
+        var d1 = document.getElementById("d1"); // Pode ocasionar problemas de memória, visto que tal variável será armazenada, mesmo que não seja utilizada.
+
+        d1.addEventListener ("click", clickB);
+        d1.addEventListener ("mouseenter", enterB);
+        d1.addEventListener ("mouseout", outB);
+        
+        function clickB() {
+            d1.style.backgroundColor = "#fff";
+            d1.style.color = "#222";
+
+            d1.style.borderRadius = "500px";
+            d1.style.textDecoration = "none";
+
+            d1.innerHTML = "Clicou!";     
+        }
+
+        function enterB() {
+            d1.style.textDecoration = "underline";
+        }
+
+        function outB() {
+            d1.style.color = "#fff"; 
+            d1.style.backgroundColor = "#0059ff";
+
+            d1.style.borderRadius = "0px";
+            d1.style.textDecoration = "none";
+
+            d1.innerHTML = "Clique aqui!"
+        }
+
+    
+    </script>
+
+</body>
+
+</html>

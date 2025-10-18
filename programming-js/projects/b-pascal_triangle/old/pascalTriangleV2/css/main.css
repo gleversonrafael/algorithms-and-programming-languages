@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fontColor: #DBD7D7;
+
+    --primaryColor: #a47699;
+    --secondaryColor: #573657;
+    --emphasisColor: #dbd053;
+
+    --primaryChecked: #d49bc7;
+    --subComplementaryColor: #5591a5;
+    --complementaryColor: #1e203e;
+
+    --primaryFont: "Montserrat";
+}
+
+/* fixes */
+::-webkit-scrollbar {
+    background-color: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--subComplementaryColor);
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #00000000;
+}
+
+/* general */
+body {
+    background-color: var(--complementaryColor);
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+}
+
+[data-hidden=true] {
+    display: none;
+}
+
+
+
+
+/*  general classes */
+.titleCSS {
+    font: normal 600 2em var(--primaryFont);
+    color: var(--emphasisColor);
+}
+
+.subtitleCSS {
+    font: normal 500 1.25em var(--primaryFont);
+    color: var(--fontColor);
+}
+
+
+.genericBox {
+    height: fit-content;
+    padding: 10px 30px;
+    background-color: var(--secondaryColor);
+
+    border-radius: 15px;
+    margin: 30px;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap-column {
+    flex-flow: column wrap;
+}
+
+.flex-full-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.medium-gap {
+    gap: 10px;
+}
+
+
+/* form */
+fieldset {
+    border: none;
+    padding: 0px;
+    gap: 10px;
+}
+
+
+.higher-label {
+    font: 400 1em var(--primaryFont);
+    color: var(--fontColor);
+    margin-bottom: 10px;
+}
+
+.lower-label {
+    font: 300 1em var(--primaryFont);
+    color: var(--fontColor);
+}
+
+
+.input-pattern {
+    transition: 0.5s all;
+    width: 100%;
+    padding: 5px 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--primaryColor);
+    cursor: pointer;
+}
+
+.input-pattern:hover {
+    background-color: var(--primaryChecked);
+}
+
+.input-pattern:focus {
+    background-color: var(--primaryChecked);
+    border: none;
+    outline: none;
+}
+
+.form-final-button {
+    background-color: var(--subComplementaryColor);
+    font: 500 0.75em var(--primaryFont);
+
+    border-radius: 10px;
+    border: none;
+
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.form-final-button:hover {
+    transition: all 0.5s;
+
+    background-color: #63d8ff;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+
+/* specific form */
+form#generateTriangle {
+    margin-top: 10vh;
+
+    margin-bottom: 20vh;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+
+    max-width: 300px;
+}
+
+#generateTriangle .formButtons {
+    justify-content: right;
+    margin: 20px 0px 15px 0px;
+}
+
+#linesNumber {
+    margin: 10px 0px 10px 0px;
+}
+
+#maxN {
+    width: calc(100% - 20px);
+}
+
+
+
+
+/* outputArea */
+#outputArea {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#outputArea .titleCSS {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.resultDetails {
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#returnButton {
+    background-color: var(--subComplementaryColor);
+    max-width: 200px;
+}
+
+
+.outputParagraph {
+    font: 500 1em var(--primaryFont);
+    color: var(--emphasisColor);
+    text-align: center;
+}
+
+
+/* triangle */
+.pascalTriangle {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 80vw;
+    overflow: scroll;
+
+    margin-top: 50px;
+}
+
+.pascalRow {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: var(--fontColor);
+}
+

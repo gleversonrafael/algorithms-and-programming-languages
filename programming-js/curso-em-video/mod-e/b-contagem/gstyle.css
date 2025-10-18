@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* fontserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* model --------------------------------------------- */
+/* general */
+:root {
+    --black: #181818;
+    --white: #fff;
+    --yellow: #FFF235;
+    --rFont: "Montserrat";
+}
+
+* {
+    font-family: var(--rFont);
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #181818;
+}
+
+
+/* main content */
+main {
+    background-color: var(--white);
+
+    width: 80vw;
+    max-width: 1000px;
+
+    height: fit-content;
+
+    border-radius: 50px;
+}
+
+#mHeader {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--yellow);
+
+    width: 100%;
+    height: 20vh;
+    max-height: 50px;
+
+    margin-bottom: 6vh;
+
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: 0px 3px 2.5px #22222207;
+}
+
+#mHeader::after {
+    position: absolute;
+    content: "";
+
+    top: 100%;
+    left: 0;
+
+    background-color: var(--yellow);
+    width: 50px;
+    height: 5vh;
+
+    border-radius: 0px 0px 250px;
+    box-shadow: 0px 3px 2.5px #22222207;
+}
+
+#mHeader > h1 {
+    font-weight: 600;
+}
+
+#txtCont {
+    height: fit-content;
+    width: 80%;
+
+    margin: 0 10%;
+}
+
+/* -------------------------------------------------- */

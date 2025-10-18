@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#txtCont {
+    padding-bottom: 5vh;
+}
+
+
+/* multiplication table */
+#mTable {
+    display: flex;
+    flex-flow: column nowrap;
+
+    margin-top: 5vh;
+
+    width: 100%;
+    height: 200px;
+}

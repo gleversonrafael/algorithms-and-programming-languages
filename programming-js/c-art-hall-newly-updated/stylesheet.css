@@ -1,0 +1,42 @@
+/* DISPLAYS */
+.flex { display: flex }
+.flex-full-align {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* AREAS */
+.body {
+    background-image: url(materials/main-background.jpg);
+}
+
+#mainHeader {
+    flex-flow: column wrap;
+}
+
+
+/* TITLES */
+.major-title {
+    font-family: var(--title-font);
+}
+
+
+/* BUTTONS */
+.headerButton {
+    background-color: var(--primaryColor);
+
+    cursor: pointer;
+    border: none;
+}
+
+
+/* ITEMS */
+.item {
+    border: 1px solid black;
+}
+
+.item-image {
+    max-width: 165px;
+    max-height: 165px;
+}

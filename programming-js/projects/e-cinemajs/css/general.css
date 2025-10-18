@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* config */
+* {
+     box-sizing: border-box;
+}
+
+:root {
+     --primaryColor: #e3dc95;
+     --secondaryColor: #a6a867;
+     --tertiaryColor: #51513d;
+
+     --primaryWhite: #e3dcc2;
+     --secondaryBlack: #1b2021;
+}
+
+
+
+
+
+/* flex */
+.flex {
+     display: flex;
+}
+
+.f-wrapped-row {
+     flex-flow: row wrap;
+}
+
+.f-align-center {
+     align-items: center;
+}
+
+.f-justify-center {
+     justify-content: center;
+}

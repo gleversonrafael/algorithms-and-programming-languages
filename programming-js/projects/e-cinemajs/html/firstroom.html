@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>cinemaJS - first room</title>
+
+     <link rel="stylesheet" href="../css/general.css">
+     <link rel="stylesheet" href="../css/reusablecss.css">
+     <link rel="stylesheet" href="../css/rooms.css">
+
+     <link rel="stylesheet" href="../css/firstroom.css">
+
+</head>
+<body>
+     <header class="flex f-wrapped-row">
+          <button> < </button>
+          <p> Room 1 - Movie A</p>
+
+     </header>
+
+     <main class="mainContent">
+          <section class="screenSection flex f-justify-center f-align-center">
+               <div class="screenCSS flex f-align-center f-justify-center"> Screen</div>
+          
+          </section>
+
+          <section id="mainHTMLMatrix" role="table" class="chairsSection">
+               <!-- row n -->
+               <section class="chairRow flex f-wrapped-row" role="row">
+                    <div data-id="A1" data-occupied="true" role="cell" class="chair">A1</div>
+                    <div data-id="An" data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-id="An" data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-id="An" data-occupied="false" role="cell" class="chair">An</div>
+
+                    <div class="spaceElement"></div>
+
+                    <div data-id="An" data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-id="An" data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-id="An" data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-id="An" data-occupied="false" role="cell" class="chair">An</div>
+
+               </section>
+
+               <!-- row n -->
+               <section class="chairRow flex f-wrapped-row" role="row">
+                    <div data-occupied="true" role="cell" class="chair">An</div>
+                    <div data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-occupied="false" role="cell" class="chair">An</div>
+
+                    <div class="spaceElement"></div>
+
+                    <div data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-occupied="false" role="cell" class="chair">An</div>
+                    <div data-occupied="false" role="cell" class="chair">An</div>
+
+               </section>
+
+          </section>
+
+     </main>
+
+     <footer>
+          <section id="resultSection">
+               <p class="selectedChairs"> Selected chairs <br>
+                    <span data-length="0"> A1, B2, C3, D4, E5, F6...</span>
+               </p>
+
+               <button> Book</button>
+
+          </section>
+
+     </footer>
+
+     <!-- js-->
+     <section>
+          <script type="module" src="../js/theater-rooms.js"></script>
+          <script type="module" src="../js/reusablecode.js"></script>
+
+     </section>
+
+</body>
+</html>

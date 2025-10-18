@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+:root {
+    --grey: #f3f3f3;
+    --wyellow: #fffab4;
+}
+
+/* specific style */
+#numList {
+    min-height: 150px;
+    height: 40vh;
+
+    width: 100%;
+    margin-top: 1vh;
+}
+
+#resTitle {
+    margin-bottom: 5px;
+}
+
+
+/* general classes */
+.txtCent {
+    text-align: center;
+}
+
+
+
+
+/* main document */
+#numList {
+    background-color: var(--grey);
+
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 1vh;
+}
+
+
+
+
+/* inputs */
+input[type=number] {
+    width: 100px;
+}
+
+input[type=button] {
+    background-color: var(--yellow);
+
+    border: none;
+    padding: 5px;
+}
+
+input[type=button]:hover {
+    background-color: var(--wyellow);
+}
+
+input[type=button]:active {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+section {
+    margin-bottom: 5vh;
+}
